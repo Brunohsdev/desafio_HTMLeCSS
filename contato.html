@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Contato</title> 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
     <header>
-        <div id="div-header">
-            <a id="logo-header" href="index.html"><img src="img/logo-ford-256.png" alt="logo header"></a>
-            <nav class="nav-header">
-                <a href="index.html"><button id="ancora-header">Home</button></a>
-                <a href="lancamento.html"><button id="ancora-header">Lançamento</button></a>
-                <a href="contato.html"><button id="ancora-header">Contato</button></a>
-            </nav>
-        </div>
-        </header>
+        <a href="index.html"><img id="logo" src="img/logo-ford-256.png" alt="Logo da Ford"></a>
+        <nav class="nav-header">
+            <a href="index.html"><span class="site-link">Home</span></a>
+            <a href="lancamento.html"><span class="site-link">Lançamento</span></a>
+            <a href="contato.html"><span class="site-link">Contato</span></a>
+        </nav>
+    <nav id="vazia">  </nav>
+    </header>
     <main>
-       
+        <img src="img/storm.jpg" alt="Ranger Storm">
+        <div class="form-container">
+       <form action="" >
+        <input type="text" placeholder="NOME*" required>
+        <input type="text" placeholder="EMAIL*" required>
+        <input type="text" placeholder="CPF*" required>
+        <input type="text" placeholder="NACIONALIDADE*" required>
+        <input type="text" placeholder="TELEFONE*" required>
+        <select name="option" id="como-deseja-ser-contatado">
+          <option value="">COMO DESEJA SER CONTATADO</option>
+          <option value="email">EMAIL</option>
+          <option value="telefone">TELEFONE</option>
+          </select>
+    
+          <button type="submit" id="enviar-dados-contato">Enviar</button>
+       </form>
+    </div>
     </main>
     <footer>
 
         <div class="div-footer-Redes-Sociais">        
-                <h3 id="Redes-Sociais">Redes Sociais</h3>
-                <a href=""><img src="img/facebook-50.png" alt="" ></a>
-                <a href=""><img src="img/youtube-squared-50.png" alt=""></a>
-                <a href=""><img src="img/instagram-logo-50.png" alt=""></a>
+                <h3 class="redes-sociais-footer" id="Redes-Sociais">Redes Sociais</h3>
+                <a class="redes-sociais-footer" href="#"><img src="img/facebook-50.png" alt="Logo do Facebook" ></a>
+                <a class="redes-sociais-footer" href="#"><img src="img/youtube-squared-50.png" alt="Logo do Youtube"></a>
+                <a class="redes-sociais-footer" href="#"><img src="img/instagram-logo-50.png" alt="Logo do Instagram"></a>
     </div>
-        <img id="img-ford-final" src="img/ford-96.png" alt="">
+        <a class="site-links" href="copyright.html">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a>
+        <img id="img-ford-final" src="img/ford-96.png" alt="Logo da Ford">
     </footer>
-</body>
 </html>

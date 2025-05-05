@@ -1,0 +1,14 @@
+#video-ford{
+    margin: 20px;
+    width: 640px;
+    height: 360px;
+}
+iframe{
+    padding: 50px;
+    width: 853px;
+    height: 450px;}
+
+.galeria-ranger-ford{
+    display: flex;
+    align-items: center;
+}
