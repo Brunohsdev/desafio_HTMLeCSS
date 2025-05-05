@@ -11,4 +11,22 @@ iframe{
 .galeria-ranger-ford{
     display: flex;
     align-items: center;
+    width: 60%;
+    justify-content: center;
+    padding: 5px;
+    width: 30%;
+    align-items: center;
+    float: inline-start;
+}
+#div-car{
+    display: flex;
+    padding: 5px;
+    width: 30%;
+    align-items: center;
+    float: inline-start;
+    flex-direction: column;
+    
+}
+#div-car a{
+    text-decoration: none;
 }
