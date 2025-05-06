@@ -7,26 +7,57 @@ iframe{
     padding: 50px;
     width: 853px;
     height: 450px;}
-
-.galeria-ranger-ford{
+    
+    .galeria-ranger-ford{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        justify-content: center;
+        margin: 10px;
+        width: 30%;
+        align-items: center;
+    float: inline-start;
+}
+.galeria-imagens-carro-ford{
     display: flex;
-    align-items: center;
-    width: 60%;
-    justify-content: center;
-    padding: 5px;
-    width: 30%;
+    width: 1200px;
     align-items: center;
     float: inline-start;
+    margin: 10px;
 }
 #div-car{
     display: flex;
-    padding: 5px;
-    width: 30%;
+    margin: 5px;
+    width: 33%;
     align-items: center;
     float: inline-start;
     flex-direction: column;
     
 }
 #div-car a{
+    display: flex;
     text-decoration: none;
+    align-items: center;
+}
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+}
+.texto-descricao{
+    font-size: 1.2em;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.descricao-do-carro{
+    margin: 5px;
+}
+#butao-comparar-carros{
+    margin: 20px;
+    padding:15px;
+    width: 25%;
+    color: white;
+    background: #0733ab;
+    border-radius: 8px;
+    border: none;
 }
