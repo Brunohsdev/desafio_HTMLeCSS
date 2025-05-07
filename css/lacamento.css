@@ -48,6 +48,7 @@ iframe{
     padding: 5px;
     align-items: center;
     justify-content: center;
+    color: #1351d8 ;
 }
 .descricao-do-carro{
     margin: 5px;
@@ -60,4 +61,5 @@ iframe{
     background: #0733ab;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }

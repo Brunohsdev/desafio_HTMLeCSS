@@ -1,0 +1,10 @@
+html, body {
+	line-height: 1;
+	height: 100%;
+	overflow: hidden;
+	}
+
+main image{
+        max-width: 60%;
+        max-height: 60%;
+}
