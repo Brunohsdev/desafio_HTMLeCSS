@@ -6,6 +6,7 @@
 
 *{
 	margin: 0;
+	box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,12 +32,17 @@ article, aside, details, figcaption, figure,
 footer, hgroup, menu,  section {
 	display: block;
 }
-html, body{
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
 	line-height: 1;
 	display: flex;
 	height: 100%;
 	width: 100%;
 	flex-direction: column;
+	justify-content: space-around;
 	}
 ol, ul {
 	list-style: none;
@@ -63,23 +69,33 @@ table {
 /* cabeçalho*/
 header{
 	display: flex;
+	width: 100%;
+	height: 10%;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	background: #fff;
 	box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.1);
+	
 	
 	}
 
 #logo-ford{
+	width: 50%; /* Tamanho ajustado do logo em telas grandes */
+    max-width: 200px;
 	padding: 8% 10%;
-	width: 50%;
+	
+}
+.ancora-navegacao{
+	width: 20%;
+	
 }
 .nav-header{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around+++++++++++++++++++++++++++++++++++++++++++++-+
+	-;
 	text-decoration: none;
-	padding: 1% 10% ;
+	padding: 1% 10%;
 	overflow: hidden;
 
 	
@@ -90,12 +106,12 @@ header{
 	justify-content: center;
 	text-decoration: none;
 	flex-grow: 1;
-	margin:  0% 10%;
+	margin:  0% 5%;
 }
 .site-link{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #1351d8;
-	margin: 8%;
+	margin: 5%;
 }
 main{
 	display: flex;
@@ -163,21 +179,57 @@ h1, h2, h3, p, span, a, button{
 	font-weight: bold;
 }
 @media (max-width: 720px){
-	body{
-		width: 100%;
-		height: 100%;
+	html, body {
+		width: 100%; 
+		height: 100%; 
+		margin: 0;
+		padding: 0; 
+		overflow-x: hidden;
+		font-family: "Roboto", sans-serif;
+		line-height: 1.5; 
 	}
 	header{
 		width: 100%;
-		height: 10%;
+		height: 5%;
+	}
+	#logo-ford{
+		padding: 4% 1%;
+		width: 100%;
+		height: 100%;
+	}
+	.nav-header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		padding: 1% 1% ;
+		overflow: hidden;
+	}
+		
+	.nav-header a{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		flex-grow: 1;
+		margin:  0% 1%;
+	}
+	.site-link{
+		font-size: 1rem;
+		color: #1351d8;
+		margin: 5%;
 	}
 	main{
-		width: 100%;
-		height: 80%;
+		width: 100vw;
+		height: 80vh;
 	}
 
+
 	footer{
+		gap: 0;
+		margin: 0%;
+		padding: 0%;
 		width: 100%;
-		height: 10%;
+		height: 10% 	;
 	}
 }
